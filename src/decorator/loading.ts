@@ -9,7 +9,7 @@
 export function loading(
   target: any,
   propertyKey: string,
-  descriptor: PropertyDescriptor,
+  descriptor: any,
 ) {
   const originalMethod = descriptor.value;
 

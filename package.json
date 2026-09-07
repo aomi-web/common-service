@@ -1,6 +1,6 @@
 {
   "name": "@aomi/common-service",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "repository": "git@github.com:aomi-web/common-service.git",
   "author": "sean <sean.snow@live.com>",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "clean": "find . -path \"./node_modules\" -prune -o -name \"*.js\" -o -name \"*.js.map\" -o -name \"*.d.ts\" |xargs rm -f | echo ''",
     "build": "rm -rf esm cjs types && tsc -d && tsc --project tsconfig.cjs.json",
     "watch": "tsc -d && tsc -w",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "pnpm build"
   },
   "files": [
     "cjs",
@@ -100,8 +100,8 @@
     }
   },
   "devDependencies": {
-    "@aomi/utils": "^1.0.10",
-    "typescript": "^5.1.3"
+    "@aomi/utils": "^1.0.11",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "object-path": "^0.11.8"

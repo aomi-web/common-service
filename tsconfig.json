@@ -3,9 +3,10 @@
     "module": "esnext",
     "target": "esnext",
     "sourceMap": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,
+    "noImplicitAny": false,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
@@ -17,7 +18,8 @@
     ],
     "skipLibCheck": true,
     "declaration": true,
-    "outDir": "esm"
+    "outDir": "esm",
+    "rootDir": "src"
   },
   "include": [
     "src"

@@ -1,8 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES5",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "target": "ES2015",
     "outDir": "cjs"
   },
 }
